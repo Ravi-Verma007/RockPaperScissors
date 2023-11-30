@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissor</title>
+  <link
+  rel="stylesheet"
+  href="../style/10. RockPaperScissor.css">
+</head>
+<body>
+  <h1>Rock Paper Scissor</h1>
+  <button onclick="
+    yourMove('Rock');
+  " class="rps-button"><img src="./images/Rock.jpeg"></button>
+
+  <button onclick="
+  yourMove('Paper');" class="rps-button" 
+  ><img src="./images/Paper.jpeg"></button>
+
+  <button onclick="
+    yourMove('Scissor');" class="rps-button"><img src="./images/Scissor.jpeg"></button>
+
+  <p class="result result-style"></p>
+
+  <p class = "moves"></p>
+
+  <p class="js-score"></p>
+
+  <button onclick="
+    score.win = 0;
+    score.lose = 0;
+    score.tie = 0;
+    localStorage.removeItem('score');
+    updateScore();
+    document.querySelector('.result')
+      .innerHTML = ``;
+
+      document.querySelector('.moves')
+        .innerHTML = ``;
+  " class="reset-button">Reset Score</button>  
+
+<script src="../style/10. RockPaperScissor.js"></script>  
+</body>
+</html>

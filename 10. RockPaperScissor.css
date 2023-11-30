@@ -1,0 +1,32 @@
+body{
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+  height: 50px;
+}
+
+.rps-button{
+  background-color: transparent;
+  border: 3px solid white;
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.result-style{
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.reset-button{
+  font-size: 15px;
+  padding: 8px 15px;
+  border: 0;
+  margin-left: 10px;
+}
